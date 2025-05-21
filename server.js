@@ -7,9 +7,9 @@ const rateLimit = require('express-rate-limit');
 require('dotenv').config();
 
 const bot1Prompt = JSON.parse(
-   fs.readFileSync('./prompts/infinitym.json', 'utf8')
+   // fs.readFileSync('./prompts/infinitym.json', 'utf8')
 
-   // fs.readFileSync('./prompts/Loomo_with_lore.json', 'utf8')
+   fs.readFileSync('./prompts/Loomo_with_lore.json', 'utf8')
 );
 
 const app = express();
